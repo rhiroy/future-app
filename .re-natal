@@ -1,0 +1,16 @@
+{
+  "name": "FutureApp",
+  "interface": "reagent6",
+  "androidHost": "localhost",
+  "iosHost": "10.0.1.77",
+  "envRoots": {
+    "dev": "env/dev",
+    "prod": "env/prod"
+  },
+  "modules": [
+    "react-native-swiper"
+  ],
+  "imageDirs": [
+    "images"
+  ]
+}

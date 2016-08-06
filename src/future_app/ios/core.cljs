@@ -41,10 +41,10 @@
 (defn greeting-scene []
   (let [greeting (subscribe [:get-greeting])]
     (fn []
-      [view {:style {:flex-direction "column" :margin 40 :align-items "center"}}
+      [view {:style {:flex-direction "column" :margin 40 :align-items "center" :margin-top (.-HEIGHT navigation-header-comp)}}
        [text {:style {:font-size 30 :font-weight "100" :margin-bottom 20 :text-align "center"}} @greeting]
-       [image {:source logo-img
-               :style  {:width 80 :height 80 :margin-bottom 30}}]
+       [image {:source regimentr-img
+               :style  {:width 300 :height 65 :margin-bottom 30}}]
 
        [touchable-highlight {:style {:background-color "#FF9633" :padding 10 :border-radius 5}
                              :on-press #(dispatch [:set-greeting "omg i hope this works"])}
@@ -60,7 +60,7 @@
 
 
 (defn hello-scene []
-   [view {:style {:flex-direction "column" :margin 40 :align-items "center"}}
+   [view {:style {:flex-direction "column" :margin 40 :align-items "center" :margin-top (.-HEIGHT navigation-header-comp)}}
        [text {:style {:font-size 30 :font-weight "100" :margin-bottom 20 :text-align "center"}} "hello"]])
 
 (defn swiper-scene []

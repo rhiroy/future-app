@@ -19,7 +19,7 @@
 (def sikh-img (js/require "./images/Sikh.png"))
 (def gurkha-img (js/require "./images/Gurkha-Soldiers.jpg"))
 (def amazonian-img (js/require "./images/AmazonianRed.jpg"))
-;;(def regimentr-img (js/require "./images.regimentr.png"))
+(def regimentr-img (js/require "./images/regimentr.png"))
 (def Swiper (js/require "react-native-swiper"))
 (def swiper (r/adapt-react-class Swiper))
 
@@ -71,7 +71,7 @@
     [text {:style {:font-size 30 :font-weight "200" :color "black"}} "The Sikh Regiment"]
     [image {:source sikh-img
              :style {:width 300 :height 400 :margin-bottom 20}}]]
-
+    
    [view {:style {:flex 1 :justify-content "center" :align-items "center" :background-color "steelblue"}}
 
     [text {:style {:font-size 30 :font-weight "200"}} "The Gurkha Regiment"]
@@ -82,7 +82,6 @@
     [text {:style {:font-size 30 :font-weight "200"}} "Gaddafi's Bodyguard"]
     [image {:source amazonian-img
             :style  {:width 300 :height 400 :margin-bottom 20}}]]])
-
 (defn scene-helper-function
 "This is a helper function to return the correct scene to the card stack"
   [props]
